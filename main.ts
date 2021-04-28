@@ -1,18 +1,10 @@
-console.log('ciao 🤘');
-let myVar: number = 3;
-myVar += 10;
-console.log('myVar = ', myVar);
+let myVar: string;
+myVar = 'ciao';
+const myConstant: string = 'ciao';
+let myAny: any;
 
-// è una definizione - un nuovo tipo per ts
-interface MyInterface {
-  myNumber: number;
-  myString: string;
-}
+let myNumberList: number[];
+let myStringList: string[] = ['ciao'];
 
-let myInterface: MyInterface = {
-  myNumber: 10,
-  myString: 'hello'
-};
-
-console.log('myNumber: ', myInterface.myNumber);
-console.log('myString: ', myInterface.myString);
+// this has a fixed number of elements
+let myTuple: [string, number] = ['ciao', 10];
