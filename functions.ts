@@ -24,3 +24,14 @@ const random = (min: number, max: number): number => {
 console.log(random(3, 5));
 console.log(random(5, 3));
 
+const arraySum = (numbers: number[]) => {
+  let sum: number = 0;
+
+  for (const n of numbers) {
+    sum +=n;
+  }
+
+  return sum;
+}
+
+console.log(arraySum([1,2,3,4,5]));
